@@ -1,7 +1,8 @@
 // ==UserScript==
 // @name        Clean CoinMarketCap Tab Title On Coin
 // @version     1.0
-// @match       *://coinmarketcap.com/currencies/*/
+// @match       http://coinmarketcap.com/currencies/*/
+// @match       https://coinmarketcap.com/currencies/*/
 // @description Shorten CoinMarketCap's tab title
 // ==/UserScript==
 
