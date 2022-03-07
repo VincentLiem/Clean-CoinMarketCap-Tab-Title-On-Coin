@@ -10,4 +10,4 @@ var title = document.title;
 var [remainder1, lastPart] = title.split('|');
 var [remainder2, secondLastPart] = remainder1.split(' to ');
 var [firstPart, midPart] = remainder2.split(' price today, ');
-document.title = firstPart + ' ' + midPart + ' :' + lastPart;
+document.title = firstPart + ' ' + midPart + ' -' + lastPart;
