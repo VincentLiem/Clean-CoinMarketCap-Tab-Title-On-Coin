@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name        Clean CoinMarketCap Tab Title On Coin
-// @version     1.0
+// @version     1.01
 // @match       http://coinmarketcap.com/currencies/*/
 // @match       https://coinmarketcap.com/currencies/*/
 // @description Shorten CoinMarketCap's tab title
 // ==/UserScript==
 
 var title = document.title;
-var [notLast, lastPart] = title.split('|');
-var [firstPart, midPart] = notLast.split(' price');
-document.title = firstPart + ' :' + lastPart;
+var [remainder1, lastPart] = title.split('|');
+var [remainder2, secondLastPart] = remainder1.split(' to ');
+var [firstPart, midPart] = remainder2.split(' price today, ');
+document.title = firstPart + ' ' + midPart + ' :' + lastPart;
