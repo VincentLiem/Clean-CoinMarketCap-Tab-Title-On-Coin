@@ -4,6 +4,7 @@
 // @match       http://coinmarketcap.com/*
 // @match       https://coinmarketcap.com/*
 // @description Shorten CoinMarketCap's tab title
+// @run-at       document-idle
 // ==/UserScript==
 
 var title = document.title;
