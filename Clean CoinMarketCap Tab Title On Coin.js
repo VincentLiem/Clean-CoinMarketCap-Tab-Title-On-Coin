@@ -7,13 +7,15 @@
 // ==/UserScript==
 
 var title = document.title;
+
 if(document.URL.indexOf("coinmarketcap.com/currencies/") >= 0)
 {
-    var [remainder1, lastPart] = title.split('|');
-    var [remainder2, secondLastPart] = remainder1.split(' to ');
-    var [firstPart, midPart] = remainder2.split(' price today, ');
+    let [remainder1, lastPart] = title.split('|');
+    let [remainder2, secondLastPart] = remainder1.split(' to ');
+    let [firstPart, midPart] = remainder2.split(' price today, ');
     document.title = firstPart + ' ' + midPart + ' -' + lastPart;
 }
+
 if (title === 'Cryptocurrency Prices, Charts And Market Capitalizations | CoinMarketCap')
 {
     document.title = 'CoinMarketCap';
