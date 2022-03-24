@@ -14,3 +14,7 @@ if(document.URL.indexOf("coinmarketcap.com/currencies/") >= 0)
     var [firstPart, midPart] = remainder2.split(' price today, ');
     document.title = firstPart + ' ' + midPart + ' -' + lastPart;
 }
+if (title = 'Cryptocurrency Prices, Charts And Market Capitalizations | CoinMarketCap')
+{
+    document.title = 'CoinMarketCap';
+}
