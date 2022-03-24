@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Clean CoinMarketCap Tab Title On Coin
-// @version     1.01
+// @version     1.02
 // @match       http://coinmarketcap.com/*
 // @match       https://coinmarketcap.com/*
 // @description Shorten CoinMarketCap's tab title
