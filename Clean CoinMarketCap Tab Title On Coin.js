@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Clean CoinMarketCap Tab Title On Coin
-// @version     1.02
+// @version     1.01
 // @match       http://coinmarketcap.com/*
 // @match       https://coinmarketcap.com/*
 // @description Shorten CoinMarketCap's tab title
@@ -14,7 +14,7 @@ if(document.URL.indexOf("coinmarketcap.com/currencies/") >= 0)
     var [firstPart, midPart] = remainder2.split(' price today, ');
     document.title = firstPart + ' ' + midPart + ' -' + lastPart;
 }
-if (title = 'Cryptocurrency Prices, Charts And Market Capitalizations | CoinMarketCap')
+if (title === 'Cryptocurrency Prices, Charts And Market Capitalizations | CoinMarketCap')
 {
     document.title = 'CoinMarketCap';
 }
